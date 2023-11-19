@@ -11,7 +11,8 @@ docker run --name pgadmin-dev --network docker_network -e PGADMIN_DEFAULT_EMAIL=
 ## Доступ к pgAdmin: 
 http://localhost:82/
 
-## Установка зависимостей проекта: pip install -r requirements.txt
+## Установка зависимостей проекта: 
+pip install -r requirements.txt
 
 ## Описание сервиса:
 ### Модуль работы с записями о качестве партий молока:
