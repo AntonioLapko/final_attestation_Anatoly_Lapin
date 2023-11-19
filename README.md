@@ -1,5 +1,5 @@
 # final_attestation_Anatoly_Lapin
-БД PostgreSQL 12.9 и СУБД pgAdmin 4 разворачиваются через docker, приложение через IDE. Использую в качестве IDE PyCharm 2022.2. 
+БД PostgreSQL 12.9 и СУБД pgAdmin 4 разворачиваются через docker, приложение запускается через IDE. Использую в качестве IDE PyCharm 2022.2. 
 Подготовлено два ноутбука с анализом данных выбранного датасета milk_training_data_csv, обучением моделей, определения их точности.
 Первый ноутбук (final_attestation_Anatoly_Lapin.ipynb) с моделью машинного обучения CatBoost, второй (knn.ipynb) с моделью машинного обучения kNN (k Nearest Neighbor).
 
