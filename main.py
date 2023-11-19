@@ -105,12 +105,13 @@ def forecast_milk_grade(ph:float, temperature:int, color:int):
     return result
 
 def ph_to_t(b):
-    t1=(16,17,19,20,21)
-    if b < 6.5 or b > 6.8: c=t1[4]
-    if b == 6.5: c=t1[3]
-    if b == 6.6: c= t1[2]
-    if b == 6.7: c=t1[1]
-    if b == 6.8: c=t1[0]
+    t1 = (16, 17, 19, 20, 21, 22)
+    if b < 6.4 or b > 6.8: c = t1[5]
+    if b == 6.4: c = tq[4]
+    if b == 6.5: c = t1[3]
+    if b == 6.6: c = t1[2]
+    if b == 6.7: c = t1[1]
+    if b == 6.8: c = t1[0]
     return c
 
 if __name__ == "__main__":
