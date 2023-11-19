@@ -27,6 +27,7 @@ docker run --name pgadmin-dev --network docker_network -e PGADMIN_DEFAULT_EMAIL=
   - http://localhost:82/
   - логин: ya@mail.ru
   - пароль: 1234
+
 Доступ к БД: 
   - логин:  alapin
   - пароль: 1234
