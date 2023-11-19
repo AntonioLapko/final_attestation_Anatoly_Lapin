@@ -1,5 +1,5 @@
 # final_attestation_Anatoly_Lapin
-Установка связей между контейнерами:
+## Установка связей между контейнерами:
 docker network create -d bridge docker_network
 
 Разворачивание БД PostgreSQL: 
