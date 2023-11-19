@@ -11,3 +11,11 @@ docker run --name pgadmin-dev --network docker_network -e PGADMIN_DEFAULT_EMAIL=
 ## Доступ к pgAdmin: http://localhost:82/
 
 ## Установка зависимостей проекта: pip install -r requirements.txt
+
+## Описание сервиса:
+### Модуль работы с записями о качестве партий молока:
+1. Создание записи POST /milk
+2. Получение всех записей GET /milk
+3. Получение записи по номеру партии (параметр: lot) GET /milk/{lot}
+4. Изменение записи по номеру партии (параметр: lot) PUT /milk/{lot}
+5. Удаление записи по номеру партии (параметр: lot) DELETE /milk/{lot}
