@@ -9,10 +9,9 @@ db = SQLAlchemy(app)
 
 class Milk(db.Model):
     __tablename__ = 'milk'
-
     id = db.Column(db.Integer, primary_key=True)
     lot = db.Column(db.Integer, unique=True, nullable=False)
-    ph = db.Column(db.Float, unique=True, nullable=False)
+    ph = db.Column(db.Float, nullable=False)
     ot = db.Column(db.Integer, nullable=False)
     temperature = db.Column(db.Integer, nullable=False)
     color = db.Column(db.Integer, nullable=False)
