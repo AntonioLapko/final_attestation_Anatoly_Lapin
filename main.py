@@ -34,15 +34,15 @@ def create_milk():
     db.session.add(new_milk)
     db.session.commit()
     return make_response(jsonify({'message': 'milk created'}), 201)
-  except e:
-    return make_response(jsonify({'message': 'error creating milk'}), 500)
+  except:
+    return make_response(jsonify({'message': 'error creating milk, lot already exist'}), 500)
 
 @app.route('/milk', methods=['GET'])
 def get_milks():
   try:
     milks = Milk.query.all()
     return make_response(jsonify([milk.json() for milk in milks]), 200)
-  except e:
+  except:
     return make_response(jsonify({'message': 'error getting milk'}), 500)
 
 
@@ -53,7 +53,7 @@ def get_milk(lot):
     if milk:
       return make_response(jsonify({'milk': milk.json()}), 200)
     return make_response(jsonify({'message': 'milk not found'}), 404)
-  except e:
+  except:
     return make_response(jsonify({'message': 'error getting milk'}), 500)
 
 
@@ -72,7 +72,7 @@ def update_milk(lot):
       db.session.commit()
       return make_response(jsonify({'message': 'milk updated'}), 200)
     return make_response(jsonify({'message': 'milk not found'}), 404)
-  except e:
+  except:
     return make_response(jsonify({'message': 'error updating milk'}), 500)
 
 
@@ -85,7 +85,7 @@ def delete_milk(lot):
       db.session.commit()
       return make_response(jsonify({'message': 'milk deleted'}), 200)
     return make_response(jsonify({'message': 'milk not found'}), 404)
-  except e:
+  except:
     return make_response(jsonify({'message': 'error deleting milk'}), 500)
 
 def forecast_milk_grade(ph:float, temperature:int, color:int):
