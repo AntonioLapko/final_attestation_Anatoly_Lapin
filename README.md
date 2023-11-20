@@ -29,7 +29,7 @@ docker run --name pgadmin-dev --network docker_network -e PGADMIN_DEFAULT_EMAIL=
   - пароль: 1234
 
 Доступ к БД: 
-  - адрес: 172.18.0.1
+  - host: 172.18.0.1
   - логин:  alapin
   - пароль: 1234
   - название БД: final_attestation
